@@ -49,15 +49,24 @@ python3 guestbook.py
 ```
 
 ## Stage and push the changes
-Now it's time to lock in those changes so everyone after you will see you in the guestbook.
+Now it's time to lock in those changes so everyone after you will see you in the guestbook. Change `YOUR-NAME` again.
+Always look first to see what files you changed. You should only see `guestbook.json`
+```
+git status
+```
+So we add `guestbook.json` and check to see that worked
 ```
 git add guestbook.json
-git commit -m 'YOUR-NAME's welcome commit'
-git push
+git status
+```
+Now we can send those changes.
+```
+git commit -m 'YOUR-NAME welcome commit'
+git push --set-upstream origin add-YOUR-NAME
 ```
 
 ## Create a pull request
-Go to the [repo on github](https://github.com/ourcanadian/welcome) and you should see a new banner with a button that says "Compare & pull request". Click that to create a pull request. 
+Go to the [repo on github](https://github.com/ourcanadian/welcome) and you should see a new banner with a button that says "Compare & pull request". Click that to create a pull request, add a comment about why you decided to take a look at this project.
 
 ## You're ready to go
 Pull requests need to be approved by another user before they can be merged in the main branch. Once that has happened, your name will be in the master guestbook that any new user will fetch when they clone this repo.
@@ -65,7 +74,7 @@ Pull requests need to be approved by another user before they can be merged in t
 ## Explore
 We have many other projects we are working on, follow their README files to get started wherever you are interested.
 
-[Buy Canadian Wiki Bot - Reddit Wiki Replier](https://github.com/ourcanadian/wiki-replier)
+[/r/BuyCanadian Wiki Bot - Reddit Wiki Replier](https://github.com/ourcanadian/wiki-replier)
 
 [Our Canadian Wiki API Wrapper - OCWA](https://github.com/ourcanadian/ocwa-wrapper)
 
