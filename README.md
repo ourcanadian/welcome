@@ -35,7 +35,7 @@ You can check to make sure you're on the right branch now.
 git branch
 ```
 
-_Note: Here's how to delete a branch if needed_
+_Note: Here's how to delete a branch if needed_      
 List your local branches and make sure you aren't on the branch you want to delete.
 ```
 git branch
