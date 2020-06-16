@@ -1,2 +1,74 @@
-# welcome
-Use this repo to get familiar with OCan and Github
+# Welcome | Bienvenue
+
+This repo was built to help you get familiar with the OurCanadian codebase and github.
+
+## Open your terminal or console in a new directory
+Personally on Mac I usually start just by opening the Terminal app and going from there.
+```
+cd Documents
+mkdir ourcanadian
+cd ourcanadian
+```
+
+## Clone the repo
+```
+git clone https://github.com/ourcanadian/welcome.git
+```
+
+## Run the code
+```
+cd welcome
+python3 guestbook.py
+```
+You should see a list of names show up, letting you know when those names were put there. We'd like you to have your name in there too.
+
+
+## Create a branch
+Replace `YOUR-NAME` so we know whose branch this is.
+```
+git checkout -b add-YOUR-NAME
+```
+
+You can check to make sure you're on the right branch now.
+```
+git branch
+```
+
+## Add yourself to the guestbook
+Open `guestbook.json` however you please and follow the format to add yourself in at the bottom.
+```
+{
+  "name": "YOUR NAME",
+  "github": "YOUR USERNAME",
+  "date": "TODAY YYYY-MM-DD"
+}
+```
+Be careful of your commas, json files can be picky. Run the code again to make sure it worked.
+```
+python3 guestbook.py
+```
+
+## Stage and push the changes
+Now it's time to lock in those changes so everyone after you will see you in the guestbook.
+```
+git add guestbook.json
+git commit -m 'YOUR-NAME's welcome commit'
+git push
+```
+
+## Create a pull request
+Go to the [repo on github](https://github.com/ourcanadian/welcome) and you should see a new banner with a button that says "Compare & pull request". Click that to create a pull request. 
+
+## You're ready to go
+Pull requests need to be approved by another user before they can be merged in the main branch. Once that has happened, your name will be in the master guestbook that any new user will fetch when they clone this repo.
+
+## Explore
+We have many other projects we are working on, follow their README files to get started wherever you are interested.
+
+[Buy Canadian Wiki Bot - Reddit Wiki Replier](https://github.com/ourcanadian/wiki-replier)
+
+[Our Canadian Wiki API Wrapper - OCWA](https://github.com/ourcanadian/ocwa-wrapper)
+
+[Search Engine UI Proof-Of-Concept - OCSE UI](https://github.com/ourcanadian/ocse-ui-poc)
+
+
