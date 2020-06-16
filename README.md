@@ -24,14 +24,29 @@ You should see a list of names show up, letting you know when those names were p
 
 
 ## Create a branch
-Replace `YOUR-NAME` so we know whose branch this is.
+Replace `username` with your github username so we know whose branch this is.
 ```
-git checkout -b add-YOUR-NAME
+git checkout -b add-username
 ```
+(e.g. `git checkout -b add-rylancole` so the branch is named `add-rylancole`)
 
 You can check to make sure you're on the right branch now.
 ```
 git branch
+```
+
+_Note: Here's how to delete a branch if needed_
+List your local branches and make sure you aren't on the branch you want to delete.
+```
+git branch
+```
+A * will mark the branch you are on. If needed, change your branch.
+```
+git checkout master
+```
+Delete the branch by replacing `NAME` with the name of the branch you want to delete.
+```
+git branch -d NAME
 ```
 
 ## Add yourself to the guestbook
@@ -64,6 +79,7 @@ Now we can send those changes.
 git commit -m 'YOUR-NAME welcome commit'
 git push --set-upstream origin add-YOUR-NAME
 ```
+If you get 'permission denied' when trying to push it is because you are not a part of the organization. Make sure you have accepted your invitation to join!
 
 ## Create a pull request
 Go to the [repo on github](https://github.com/ourcanadian/welcome) and you should see a new banner with a button that says "Compare & pull request". Click that to create a pull request, add a comment about why you decided to take a look at this project.
