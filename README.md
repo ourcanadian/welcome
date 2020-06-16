@@ -4,19 +4,19 @@ This repo was built to help you get familiar with the OurCanadian codebase and g
 
 ## Open your terminal or console in a new directory
 Personally on Mac I usually start just by opening the Terminal app and going from there.
-```
+```bash
 cd Documents
 mkdir ourcanadian
 cd ourcanadian
 ```
 
 ## Clone the repo
-```
+```bash
 git clone https://github.com/ourcanadian/welcome.git
 ```
 
 ## Run the code
-```
+```bash
 cd welcome
 python3 guestbook.py
 ```
@@ -25,33 +25,33 @@ You should see a list of names show up, letting you know when those names were p
 
 ## Create a branch
 Replace `username` with your github username so we know whose branch this is.
-```
+```bash
 git checkout -b add-username
 ```
 (e.g. `git checkout -b add-rylancole` so the branch is named `add-rylancole`)
 
 You can check to make sure you're on the right branch now.
-```
+```bash
 git branch
 ```
 
 _Note: Here's how to delete a branch if needed_      
 List your local branches and make sure you aren't on the branch you want to delete.
-```
+```bash
 git branch
 ```
 A * will mark the branch you are on. If needed, change your branch.
-```
+```bash
 git checkout master
 ```
 Delete the branch by replacing `NAME` with the name of the branch you want to delete.
-```
+```bash
 git branch -d NAME
 ```
 
 ## Add yourself to the guestbook
 Open `guestbook.json` however you please and follow the format to add yourself in at the bottom.
-```
+```json
 {
   "name": "YOUR NAME",
   "github": "YOUR USERNAME",
@@ -59,23 +59,23 @@ Open `guestbook.json` however you please and follow the format to add yourself i
 }
 ```
 Be careful of your commas, json files can be picky. Run the code again to make sure it worked.
-```
+```bash
 python3 guestbook.py
 ```
 
 ## Stage and push the changes
 Now it's time to lock in those changes so everyone after you will see you in the guestbook.  
 Always look first to see what files you changed. You should only see `guestbook.json`
-```
+```bash
 git status
 ```
 So we add `guestbook.json` and check to see that worked
-```
+```bash
 git add guestbook.json
 git status
 ```
 Now we can send those changes. Change `username` again.
-```
+```bash
 git commit -m 'username welcome commit'
 git push --set-upstream origin add-username
 ```
