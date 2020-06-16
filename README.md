@@ -64,7 +64,7 @@ python3 guestbook.py
 ```
 
 ## Stage and push the changes
-Now it's time to lock in those changes so everyone after you will see you in the guestbook. Change `YOUR-NAME` again.
+Now it's time to lock in those changes so everyone after you will see you in the guestbook.  
 Always look first to see what files you changed. You should only see `guestbook.json`
 ```
 git status
@@ -74,10 +74,10 @@ So we add `guestbook.json` and check to see that worked
 git add guestbook.json
 git status
 ```
-Now we can send those changes.
+Now we can send those changes. Change `username` again.
 ```
-git commit -m 'YOUR-NAME welcome commit'
-git push --set-upstream origin add-YOUR-NAME
+git commit -m 'username welcome commit'
+git push --set-upstream origin add-username
 ```
 If you get 'permission denied' when trying to push it is because you are not a part of the organization. Make sure you have accepted your invitation to join!
 
